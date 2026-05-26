@@ -86,6 +86,27 @@ export default function DashboardPage() {
           </ResponsiveContainer>
         </CardContent>
       </Card>
+    {/* Pipeline Value Estimator */}
+    <Card className="bg-white/5 backdrop-blur-xl border border-white/10">
+      <CardHeader>
+        <CardTitle className="text-xl font-medium text-white">Pipeline Value Estimator</CardTitle>
+      </CardHeader>
+      <CardContent className="space-y-4">
+        <div className="flex flex-col gap-2">
+          <label className="text-white">Average Deal Size ($)</label>
+          <input type="number" className="bg-white/10 text-white rounded p-2 focus:outline-none" placeholder="e.g., 10000" />
+        </div>
+        <div className="flex flex-col gap-2">
+          <label className="text-white">Lead‑to‑Close Rate (%)</label>
+          <input type="number" className="bg-white/10 text-white rounded p-2 focus:outline-none" placeholder="e.g., 15" />
+        </div>
+        <button className="mt-2 px-4 py-2 bg-blue-500/80 text-white rounded hover:bg-blue-600 transition">
+          Calculate
+        </button>
+        {/* Result placeholder */}
+        <div className="text-2xl font-bold text-white">Estimated Pipeline: —</div>
+      </CardContent>
+    </Card>
     </motion.div>
   );
 }
