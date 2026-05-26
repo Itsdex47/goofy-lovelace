@@ -19,15 +19,11 @@ export default function Home() {
         AI‑driven SEO & visibility platform for B2B SaaS. Scan your domain, see competitor battlecards, and estimate pipeline value.
       </p>
       <div className="flex gap-4">
-        <Link href="/dashboard" passHref>
-          <Button variant="default" asChild>
-            <a>Enter Dashboard</a>
-          </Button>
+        <Link href="/dashboard">
+          <Button variant="default">Enter Dashboard</Button>
         </Link>
-        <Link href="https://github.com/searchable" passHref>
-          <Button variant="outline" asChild>
-            <a>GitHub</a>
-          </Button>
+        <Link href="https://github.com/searchable">
+          <Button variant="outline">GitHub</Button>
         </Link>
       </div>
     </motion.main>
