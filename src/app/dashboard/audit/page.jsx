@@ -1,4 +1,4 @@
-import React from 'react';
+"use client";
 import { motion } from 'framer-motion';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { CheckCircle, XCircle } from 'lucide-react';
